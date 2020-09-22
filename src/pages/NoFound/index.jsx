@@ -1,9 +1,9 @@
 import React from 'react'
-export default class Home extends React.Component{
+export default class NoFound extends React.Component{
     render(){
         return(
             <div>
-                Home
+                404...页面飞走了
             </div>
         )
     }

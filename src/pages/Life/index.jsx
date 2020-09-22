@@ -1,9 +1,9 @@
 import React from 'react'
-export default class Home extends React.Component{
+export default class Life extends React.Component{
     render(){
         return(
             <div>
-                Home
+                Life
             </div>
         )
     }
