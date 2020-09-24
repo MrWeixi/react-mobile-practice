@@ -5,7 +5,7 @@ export default class Life extends React.Component{
     render(){
         return(
             <div>
-                Life
+                生活服务
                 <FootNav />
             </div>
         )
