@@ -1,6 +1,7 @@
 import React from "react";
 import FootNav from "../../components/FootNav";
 import HomeHeader from "./HomeHeader";
+import HomeHot from './HomeHot'
 import Swiper from "../../components/Swiper";
 import banner1 from '../../static/images/banner1.png'
 import banner2 from '../../static/images/banner2.png'
@@ -11,6 +12,7 @@ export default class Home extends React.Component {
       <div>
         <HomeHeader />
         <Swiper banners={[banner1,banner2,banner3]}/>
+        <HomeHot />
         <FootNav />
       </div>
     );
