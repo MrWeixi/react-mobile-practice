@@ -3,9 +3,8 @@ import "./style.less"
 
 export default class HotCity extends React.Component {
 
-    clickHandler(cityName) {
-        console.log(cityName)
-        // this.props.cityNameHandler(cityName);
+    clickHandler=(cityName)=> {
+         this.props.cityNameHandle(cityName);
     }
     render() {
         return (

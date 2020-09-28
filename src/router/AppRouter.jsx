@@ -7,6 +7,7 @@ import Mine from '../pages/Mine'
 import Shop from '../pages/Shop'
 import NotFound from '../pages/NotFound'
 import City from '../pages/City'
+import Search from '../pages/Search'
 
 export default class AppRouter extends React.Component {
     render() {
@@ -19,11 +20,10 @@ export default class AppRouter extends React.Component {
                         <Route path="/shop" component={Shop}></Route>
                         <Route path="/mine" component={Mine}></Route>
                         <Route path="/city" component={City}></Route>
+                        <Route path="/search/:content" component={Search}></Route>
                         <Route path="*" component={NotFound}></Route>
                     </Switch>
-
                 </App>
-
             </HashRouter>
         )
     }

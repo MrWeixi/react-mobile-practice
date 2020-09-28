@@ -4,12 +4,13 @@ import { connect } from 'react-redux'
 import * as cityActions from '../actions/city'
 import { bindActionCreators } from 'redux'
 class App extends React.Component {
-componentDidMount(){
-    // 北京  来源
-    this.props.cityActions.initCity({
-        cityName:'北京'
-    })
-}
+    componentDidMount() {
+        const city =localStorage.getItem('city')
+        // 北京  来源
+        this.props.cityActions.initCity({
+            cityName: city || '北京'
+        })
+    }
     render() {
         return (
             <div>
@@ -28,7 +29,7 @@ const mapStateToProps = state => {
 }
 const mapDisPatchToProps = dispatch => {
     return {
-        cityActions: bindActionCreators(cityActions,dispatch)
+        cityActions: bindActionCreators(cityActions, dispatch)
     }
 }
 
